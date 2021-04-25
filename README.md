@@ -32,9 +32,7 @@ Implementation details
 
 1. The Controller reads the ip addresses and port numbers from the given file and divides the initial amount equally with all the branches and initializes them.
 2. Upon initialization each branch waits until it is completely initialized before starting to transfer money.
-3. Random money transfer
-	a. Used TimerTask and Timer classes.
-	b. Each time a random interval of time and a random branch are determined and then a transfer is scheduled.
+3. Random money transfer - Each time a random interval of time and a random branch are determined and then a transfer is scheduled.
 4. Updating of the balance is synchronized so that only one thread would update the balance at a given instant of time.
 5. When branch receives marker (if first marker) then it, 
 	a. temporarily stalls money transfers.
